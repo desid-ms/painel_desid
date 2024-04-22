@@ -1,0 +1,11 @@
+{
+  "listingMap": {
+    "index.qmd": [
+      "analises/*/index.qmd",
+      "analises"
+    ],
+    "datasets.qmd": [
+      "datasets"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+project:
+  type: website
+
+website:
+  
+  search: false
+  navbar:
+    background: light
+    collapse-below: lg
+    left:
+      - text: Análises
+        href: index.qmd
+      - paineis.qmd
+      - datasets.qmd
+      - governanca.qmd
+format:
+  html:
+    theme: custom.scss
+    lang: pt-br
+    language:
+      listing-page-field-categories: "Domínios"
+      # listing-page-category-all: "Todas"
+    default-image-extension: svg
+    grid:
+      # sidebar-width: 300px
+      # body-width: 900px
+      margin-width: 350px
+      # gutter-width: 1.5rem
+    # template-partials: 
+    #   - title-block.html
+

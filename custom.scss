@@ -1,0 +1,107 @@
+/*-- scss:defaults --*/
+
+$font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$headings-font-family:        Montserrat, "Helvetica Neue", Helvetica, Arial;
+$navbar-light-color: #FAF7F4;
+$primary: #316E6B;
+$secundary: #6E3154;
+$light: #FAF7F4;
+$btn-font-family: Montserrat, "Helvetica Neue", Helvetica, Arial;
+$nav-link-font-size:  1.4rem !default;
+$nav-link-font-weight:  500;
+$nav-link-font-family: $headings-font-family;
+$navbar-brand-font-size: .75rem;
+$link-hover-decoration: underline;
+$h1-font-size:                4rem !default;
+
+$navbar-padding-y:  2rem;
+$navbar-padding-x:  0rem;
+
+.container, .container-fluid {
+    padding-left: 0px !important;
+}
+
+div.callout-important {
+    border-left-color: $secundary !important;
+    background-color: $light;
+    
+
+  }
+.callout-header {
+    background-color: $secundary !important;
+    opacity: 100% !important;
+    color: white;
+    font-weight: 700 !important;
+    font-size: 1.8rem !important;
+}
+
+  .callout.callout-style-default {
+    border-left: 1px solid $secundary !important;
+    border-right: 1px solid $secundary !important;
+    border-top: 1px !important;
+    border-bottom: 1px solid $secundary !important;
+}
+div.callout-body-container.callout-body > ul {
+    padding-top:2em !important;
+    list-style-type: none;
+    font-size: 1.2rem;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+div.callout-body-container.callout-body > ul > li{
+    padding-bottom: .8em !important;
+    
+}
+// div.callout.callout-style-default.callout-important.no-icon.callout-titled {
+//     background-color: black
+// }
+
+
+.navbar-container {
+    position: relative; // Set the parent to relative positioning
+    margin-top: 1rem;
+
+    &::before {
+        content: "Evidências econômicas qualificadas a serviço do SUS"; // Define the text to display
+        position: absolute;
+        top: -2rem; // Adjust top and left as needed
+        left: .75rem;
+        color: $secundary;
+        opacity: 60%; // Set text color
+        padding: 0px; // Optional: some padding around the text
+        z-index: 10; // Ensure the text is above other content
+    }
+}
+
+.navbar-nav .nav-item {
+    padding-left: 0px;
+    padding-right: 3rem; // Adjust right padding as needed
+.nav-link {
+    &:hover,
+    &.active {
+        text-decoration: underline;
+        text-decoration-color: $secundary;
+        // text-decoration-color: $primary;
+        text-decoration-thickness: 5px; // Adjust thickness as needed
+        text-underline-offset: .5rem; // Increase or adjust the offset to control the distance
+
+    }
+}
+}
+
+#quarto-header {
+    // Ensure the container is capable of containing floated elements
+    overflow: auto;
+
+    // Set the background image to the logo
+    background-image: url('images/desid-insights.svg');
+    background-repeat: no-repeat; // Ensure the image doesn't repeat
+    background-position: right center; // Position the image on the right side and vertically centered
+    background-size: 295px 146px; // Adjusts the image size to make sure the image is fully visible within the element.
+    padding-right: 295px;
+}
+
+.quarto-title-banner {
+    border-bottom:2px solid #eae7e4dd;
+}

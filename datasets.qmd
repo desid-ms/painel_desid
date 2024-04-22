@@ -1,0 +1,19 @@
+---
+title: Datasets
+title-block-banner: false
+page-layout: full
+editor:
+    render-on-save: true
+listing:
+  sort: "date desc"
+  contents: datasets
+  sort-ui: false
+  filter-ui: false
+  categories: true
+  feed: false
+---
+
+::: { style="color: #316e6b"}
+## Últimas publicações
+:::
+
